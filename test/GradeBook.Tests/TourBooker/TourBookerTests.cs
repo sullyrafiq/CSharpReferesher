@@ -80,12 +80,12 @@ namespace GradeBook.Tests.TourBooker
             var allCountriesByKey = appData.AllCountriesByKey;
 
             // Act
-            allCountriesByKey.TryGetValue("CHN", out Country country);
+            allCountriesByKey.TryGetValue(new CountryCode("CHN"), out Country country);
 
             // Assert
             Assert.Equal("China", country.Name);
         }
-        
+
         [Fact]
         public void it_finds_country_by_country_code_but_using_dictionary_and_with_lowercase_country_code()
         {
@@ -95,10 +95,44 @@ namespace GradeBook.Tests.TourBooker
             var allCountriesByKey = appData.AllCountriesByKey;
 
             // Act
-            allCountriesByKey.TryGetValue("chn", out Country country);
+            allCountriesByKey.TryGetValue(new CountryCode("chn"), out Country country);
 
             // Assert
             Assert.Equal("China", country.Name);
+        }
+
+        [Fact]
+        public void it_uses_sorted_dictionary()
+        {
+            // Arrange
+            var appData = new AppData();
+            appData.Initialise();
+
+            // Act
+            var sortedDictionary = appData.AllCountriesSorted;
+
+            // Assert
+            foreach (var (key, value) in sortedDictionary)
+            {
+                _testOutputHelper.WriteLine("{1} ({0})", value, key);
+            }
+        }
+
+        [Fact]
+        public void it_uses_sorted_list()
+        {
+            // Arrange
+            var appData = new AppData();
+            appData.Initialise();
+
+            // Act
+            var sortedList = appData.AllCountriesSortedWithList;
+
+            // Assert
+            foreach (var (key, value) in sortedList)
+            {
+                _testOutputHelper.WriteLine("{1} ({0})", value, key);
+            }
         }
 
         private Country GetCountryWithCountryCode(List<Country> countries, string code)
@@ -108,7 +142,7 @@ namespace GradeBook.Tests.TourBooker
                 return null;
             }
 
-            return countries.Find(x => x.Code == code);
+            return countries.Find(x => x.Code.Equals(new CountryCode(code)));
         }
     }
 }

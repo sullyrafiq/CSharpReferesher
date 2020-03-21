@@ -17,4 +17,14 @@
     <ProjectReference Include="..\..\src\GradeBook\GradeBook.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Resource Include="TestAssets\PopByLargest.csv" />
+  </ItemGroup>
+  
+  <ItemGroup>
+    <Content Include="TestAssets\**">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </Content>
+  </ItemGroup>
+
 </Project>

@@ -32,6 +32,11 @@
             <e p="Model.cs" t="Include" />
           </e>
           <e p="Statistics.cs" t="Include" />
+          <e p="TourBooker" t="Include">
+            <e p="AppData.cs" t="Include" />
+            <e p="Country.cs" t="Include" />
+            <e p="CsvReader.cs" t="Include" />
+          </e>
         </e>
       </e>
       <e p="test" t="Include">
@@ -39,9 +44,11 @@
           <e p="bin" t="ExcludeRecursive" />
           <e p="BookTests.cs" t="Include" />
           <e p="datastructures" t="Include">
+            <e p="ArrayListAndCollectionTests.cs" t="Include" />
             <e p="CircularBufferTests.cs" t="Include" />
             <e p="CollectionTests.cs" t="Include" />
             <e p="Employee.cs" t="Include" />
+            <e p="EnumWithGenerics.cs" t="Include" />
           </e>
           <e p="GradeBook.Tests.csproj" t="IncludeRecursive" />
           <e p="obj" t="ExcludeRecursive">
@@ -53,6 +60,12 @@
           </e>
           <e p="QueryIt" t="Include">
             <e p="QueryIt.cs" t="Include" />
+          </e>
+          <e p="TestAssets" t="Include">
+            <e p="PopByLargest.csv" t="Include" />
+          </e>
+          <e p="TourBooker" t="Include">
+            <e p="TourBookerTests.cs" t="Include" />
           </e>
           <e p="TypeTests.cs" t="Include" />
         </e>

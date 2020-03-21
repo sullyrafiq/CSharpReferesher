@@ -1,29 +1,91 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ef8a7ab9-81af-44db-8f3c-9c9071030d09" name="Default Changelist" comment="" />
+    <list default="true" id="ef8a7ab9-81af-44db-8f3c-9c9071030d09" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/test/GradeBook.Tests/datastructures/EnumWithGenerics.cs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.gradebook/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.gradebook/.idea/contentModel.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/.idea.gradebook/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.gradebook/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GradeBook/GradeBook.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/src/GradeBook/GradeBook.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GradeBook/bin/Debug/netcoreapp3.1/EntityFramework.SqlServer.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GradeBook/bin/Debug/netcoreapp3.1/EntityFramework.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GradeBook/bin/Debug/netcoreapp3.1/GradeBook.deps.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GradeBook/bin/Debug/netcoreapp3.1/GradeBook.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GradeBook/bin/Debug/netcoreapp3.1/GradeBook.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GradeBook/bin/Debug/netcoreapp3.1/GradeBook.runtimeconfig.dev.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GradeBook/bin/Debug/netcoreapp3.1/GradeBook.runtimeconfig.json" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GradeBook/bin/Debug/netcoreapp3.1/Microsoft.Win32.SystemEvents.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GradeBook/bin/Debug/netcoreapp3.1/System.CodeDom.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GradeBook/bin/Debug/netcoreapp3.1/System.Configuration.ConfigurationManager.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GradeBook/bin/Debug/netcoreapp3.1/System.Data.SqlClient.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GradeBook/bin/Debug/netcoreapp3.1/System.Drawing.Common.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GradeBook/bin/Debug/netcoreapp3.1/System.Security.Cryptography.ProtectedData.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GradeBook/bin/Debug/netcoreapp3.1/System.Security.Permissions.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GradeBook/bin/Debug/netcoreapp3.1/System.Windows.Extensions.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GradeBook/bin/Debug/netcoreapp3.1/runtimes/unix/lib/netcoreapp2.1/System.Data.SqlClient.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GradeBook/bin/Debug/netcoreapp3.1/runtimes/unix/lib/netcoreapp3.0/System.Drawing.Common.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GradeBook/bin/Debug/netcoreapp3.1/runtimes/win-arm64/native/sni.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GradeBook/bin/Debug/netcoreapp3.1/runtimes/win-x64/native/sni.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GradeBook/bin/Debug/netcoreapp3.1/runtimes/win-x86/native/sni.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GradeBook/bin/Debug/netcoreapp3.1/runtimes/win/lib/netcoreapp2.1/System.Data.SqlClient.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GradeBook/bin/Debug/netcoreapp3.1/runtimes/win/lib/netcoreapp3.0/Microsoft.Win32.SystemEvents.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GradeBook/bin/Debug/netcoreapp3.1/runtimes/win/lib/netcoreapp3.0/System.Drawing.Common.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GradeBook/bin/Debug/netcoreapp3.1/runtimes/win/lib/netcoreapp3.0/System.Windows.Extensions.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GradeBook/bin/Debug/netcoreapp3.1/runtimes/win/lib/netstandard2.0/System.Security.Cryptography.ProtectedData.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GradeBook/obj/Debug/netcoreapp3.1/GradeBook" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GradeBook/obj/Debug/netcoreapp3.1/GradeBook.assets.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GradeBook/obj/Debug/netcoreapp3.1/GradeBook.csproj.CopyComplete" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GradeBook/obj/Debug/netcoreapp3.1/GradeBook.csproj.FileListAbsolute.txt" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GradeBook/obj/Debug/netcoreapp3.1/GradeBook.csprojAssemblyReference.cache" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GradeBook/obj/Debug/netcoreapp3.1/GradeBook.dll" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/GradeBook/obj/Debug/netcoreapp3.1/GradeBook.pdb" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/GradeBook.Tests/GradeBook.Tests.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/test/GradeBook.Tests/GradeBook.Tests.csproj" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/GradeBook.Tests/bin/Debug/netcoreapp3.1/GradeBook.Tests.dll" beforeDir="false" afterPath="$PROJECT_DIR$/test/GradeBook.Tests/bin/Debug/netcoreapp3.1/GradeBook.Tests.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/GradeBook.Tests/bin/Debug/netcoreapp3.1/GradeBook.Tests.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/test/GradeBook.Tests/bin/Debug/netcoreapp3.1/GradeBook.Tests.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/GradeBook.Tests/bin/Debug/netcoreapp3.1/GradeBook.dll" beforeDir="false" afterPath="$PROJECT_DIR$/test/GradeBook.Tests/bin/Debug/netcoreapp3.1/GradeBook.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/GradeBook.Tests/bin/Debug/netcoreapp3.1/GradeBook.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/test/GradeBook.Tests/bin/Debug/netcoreapp3.1/GradeBook.pdb" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/GradeBook.Tests/obj/Debug/netcoreapp3.1/GradeBook.Tests.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/test/GradeBook.Tests/obj/Debug/netcoreapp3.1/GradeBook.Tests.csproj.FileListAbsolute.txt" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/GradeBook.Tests/obj/Debug/netcoreapp3.1/GradeBook.Tests.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/test/GradeBook.Tests/obj/Debug/netcoreapp3.1/GradeBook.Tests.csprojAssemblyReference.cache" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/GradeBook.Tests/obj/Debug/netcoreapp3.1/GradeBook.Tests.dll" beforeDir="false" afterPath="$PROJECT_DIR$/test/GradeBook.Tests/obj/Debug/netcoreapp3.1/GradeBook.Tests.dll" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/test/GradeBook.Tests/obj/Debug/netcoreapp3.1/GradeBook.Tests.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/test/GradeBook.Tests/obj/Debug/netcoreapp3.1/GradeBook.Tests.pdb" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
   <component name="HighlightingSettingsPerFile">
+    <setting file="mock:///Dummy.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/GradeBook/datastructures/CircularBuffer.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/231CAC4C-D307-4AEA-83F1-76589F64BFB3/18/67de6509/Converter`2.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/test/GradeBook.Tests/datastructures/CircularBufferTests.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/test/GradeBook.Tests/TypeTests.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/test/GradeBook.Tests/BookTests.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/377B61B6-13EA-444F-826F-377D9474FFCA/45/10338b27/ExecutionTimer.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/CAA0A9E4-A748-4958-ABBD-E81F7F2130B1/A/HashSet.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/GradeBook/TourBooker/Country.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/8517F607-C12A-4B50-8364-C3F896F0FE6F/85/b596f5ac/Assert.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/GradeBook/TourBooker/AppData.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/GradeBook/datastructures/BufferExtensions.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/src/GradeBook/TourBooker/CsvReader.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/GradeBook/QueryIt/Model.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/test/GradeBook.Tests/QueryIt/QueryIt.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/GradeBook/QueryIt/DataAccess.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/test/GradeBook.Tests/datastructures/EnumWithGenerics.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/1DAE6F1A-63D4-4EE9-A227-AB9718FBB755/26/TypeConverter.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/588E3632-418C-426E-B5DF-4F46ADFF6033/bb/ea66dfb2/DbSet`1.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/test/GradeBook.Tests/TourBooker/TourBookerTests.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/AEE2864C-1290-46B1-948A-40741160CDAB/26/TypeConverter.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/AEE2864C-1290-46B1-948A-40741160CDAB/11/BaseNumberConverter.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/377B61B6-13EA-444F-826F-377D9474FFCA/d0/2726a6bf/TestInvoker`1.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/GradeBook/Statistics.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/B29DAA0D-8DF3-450D-AA4B-DE0133942F36/26/Select.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="mock:///Dummy.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/CAA0A9E4-A748-4958-ABBD-E81F7F2130B1/F/SortedDictionary.cs" root0="SKIP_HIGHLIGHTING" />
     <setting file="mock:///Dummy.cs" root0="FORCE_HIGHLIGHTING" />
@@ -31,8 +93,12 @@
     <setting file="file://$PROJECT_DIR$/src/GradeBook/Book.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/src/GradeBook/Program.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/92882F58-11D9-44E2-9819-BF62BA26EB87/63/Convert.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="FORCE_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/92882F58-11D9-44E2-9819-BF62BA26EB87/6C/Double.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="mock:///Dummy.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/DecompilerCache/decompiler/231CAC4C-D307-4AEA-83F1-76589F64BFB3/df/64748b86/Action`1.cs" root0="SKIP_HIGHLIGHTING" />
+    <setting file="file://$PROJECT_DIR$/test/GradeBook.Tests/datastructures/ArrayListAndCollectionTests.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/test/GradeBook.Tests/datastructures/CollectionTests.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$PROJECT_DIR$/test/GradeBook.Tests/datastructures/Employee.cs" root0="FORCE_HIGHLIGHTING" />
     <setting file="file://$APPLICATION_CONFIG_DIR$/resharper-host/SourcesCache/AB2A9D39-B6F0-4D0C-A9A1-DBC8DE06E56E/26/Select.cs" root0="SKIP_HIGHLIGHTING" />
@@ -50,10 +116,20 @@
         <option value="$PROJECT_DIR$/src/GradeBook/QueryIt/Model.cs" />
         <option value="$PROJECT_DIR$/src/GradeBook/QueryIt/DataAccess.cs" />
         <option value="$PROJECT_DIR$/test/GradeBook.Tests/QueryIt/QueryIt.cs" />
+        <option value="$PROJECT_DIR$/test/GradeBook.Tests/datastructures/EnumWithGenerics.cs" />
+        <option value="$PROJECT_DIR$/test/GradeBook.Tests/datastructures/ArrayListAndCollectionTests.cs" />
+        <option value="$PROJECT_DIR$/src/GradeBook/TourBooker/Country.cs" />
+        <option value="$PROJECT_DIR$/test/GradeBook.Tests/TourBooker/CircularBufferTests.cs" />
+        <option value="$PROJECT_DIR$/test/GradeBook.Tests/GradeBook.Tests.csproj" />
+        <option value="$PROJECT_DIR$/src/GradeBook/TourBooker/CsvReader.cs" />
+        <option value="$PROJECT_DIR$/src/GradeBook/TourBooker/AppData.cs" />
+        <option value="$PROJECT_DIR$/test/GradeBook.Tests/TourBooker/TourBookerTests.cs" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
   <component name="ProjectId" id="1ZJRthn6mBYSaI6neBokcAQy065" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
     <option name="showExcludedFiles" value="true" />
@@ -62,6 +138,7 @@
   <component name="PropertiesComponent">
     <property name="Rider.SolutionExplorerActivator" value="true" />
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="TWShift.3" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="settings.editor.selected.configurable" value="editor.preferences.smartKeys_rider" />
   </component>
@@ -98,7 +175,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1584555427689</updated>
-      <workItem from="1584555431605" duration="16854000" />
+      <workItem from="1584555431605" duration="24701000" />
     </task>
     <servers />
   </component>
@@ -107,95 +184,106 @@
   </component>
   <component name="UnityProjectConfiguration" hasMinimizedUI="null" />
   <component name="UnityUnitTestConfiguration" currentTestLauncher="NUnit" />
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
   <component name="WindowStateProjectService">
     <state x="304" y="187" key="#com.intellij.execution.impl.EditConfigurationsDialog" timestamp="1584569761165">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state x="304" y="187" key="#com.intellij.execution.impl.EditConfigurationsDialog/0.0.1680.1050@0.0.1680.1050" timestamp="1584569761165" />
-    <state width="1638" height="354" key="GridCell.Tab.0.bottom" timestamp="1584723940978">
+    <state width="1638" height="354" key="GridCell.Tab.0.bottom" timestamp="1584805138342">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1638" height="354" key="GridCell.Tab.0.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1584723940978" />
-    <state width="1638" height="354" key="GridCell.Tab.0.center" timestamp="1584723940977">
+    <state width="1638" height="354" key="GridCell.Tab.0.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1584805138342" />
+    <state width="1638" height="354" key="GridCell.Tab.0.center" timestamp="1584805138341">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1638" height="354" key="GridCell.Tab.0.center/0.0.1680.1050@0.0.1680.1050" timestamp="1584723940977" />
-    <state width="1638" height="354" key="GridCell.Tab.0.left" timestamp="1584723940976">
+    <state width="1638" height="354" key="GridCell.Tab.0.center/0.0.1680.1050@0.0.1680.1050" timestamp="1584805138341" />
+    <state width="1638" height="354" key="GridCell.Tab.0.left" timestamp="1584805138341">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1638" height="354" key="GridCell.Tab.0.left/0.0.1680.1050@0.0.1680.1050" timestamp="1584723940976" />
-    <state width="1638" height="354" key="GridCell.Tab.0.right" timestamp="1584723940977">
+    <state width="1638" height="354" key="GridCell.Tab.0.left/0.0.1680.1050@0.0.1680.1050" timestamp="1584805138341" />
+    <state width="1638" height="354" key="GridCell.Tab.0.right" timestamp="1584805138342">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1638" height="354" key="GridCell.Tab.0.right/0.0.1680.1050@0.0.1680.1050" timestamp="1584723940977" />
-    <state width="1638" height="354" key="GridCell.Tab.1.bottom" timestamp="1584723940980">
+    <state width="1638" height="354" key="GridCell.Tab.0.right/0.0.1680.1050@0.0.1680.1050" timestamp="1584805138342" />
+    <state width="1638" height="354" key="GridCell.Tab.1.bottom" timestamp="1584805138343">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1638" height="354" key="GridCell.Tab.1.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1584723940980" />
-    <state width="1638" height="354" key="GridCell.Tab.1.center" timestamp="1584723940979">
+    <state width="1638" height="354" key="GridCell.Tab.1.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1584805138343" />
+    <state width="1638" height="354" key="GridCell.Tab.1.center" timestamp="1584805138343">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1638" height="354" key="GridCell.Tab.1.center/0.0.1680.1050@0.0.1680.1050" timestamp="1584723940979" />
-    <state width="1638" height="354" key="GridCell.Tab.1.left" timestamp="1584723940979">
+    <state width="1638" height="354" key="GridCell.Tab.1.center/0.0.1680.1050@0.0.1680.1050" timestamp="1584805138343" />
+    <state width="1638" height="354" key="GridCell.Tab.1.left" timestamp="1584805138342">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1638" height="354" key="GridCell.Tab.1.left/0.0.1680.1050@0.0.1680.1050" timestamp="1584723940979" />
-    <state width="1638" height="354" key="GridCell.Tab.1.right" timestamp="1584723940980">
+    <state width="1638" height="354" key="GridCell.Tab.1.left/0.0.1680.1050@0.0.1680.1050" timestamp="1584805138342" />
+    <state width="1638" height="354" key="GridCell.Tab.1.right" timestamp="1584805138343">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1638" height="354" key="GridCell.Tab.1.right/0.0.1680.1050@0.0.1680.1050" timestamp="1584723940980" />
-    <state width="1638" height="354" key="GridCell.Tab.2.bottom" timestamp="1584723940981">
+    <state width="1638" height="354" key="GridCell.Tab.1.right/0.0.1680.1050@0.0.1680.1050" timestamp="1584805138343" />
+    <state width="1638" height="354" key="GridCell.Tab.2.bottom" timestamp="1584805138344">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1638" height="354" key="GridCell.Tab.2.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1584723940981" />
-    <state width="1638" height="354" key="GridCell.Tab.2.center" timestamp="1584723940981">
+    <state width="1638" height="354" key="GridCell.Tab.2.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1584805138344" />
+    <state width="1638" height="354" key="GridCell.Tab.2.center" timestamp="1584805138344">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1638" height="354" key="GridCell.Tab.2.center/0.0.1680.1050@0.0.1680.1050" timestamp="1584723940981" />
-    <state width="1638" height="354" key="GridCell.Tab.2.left" timestamp="1584723940980">
+    <state width="1638" height="354" key="GridCell.Tab.2.center/0.0.1680.1050@0.0.1680.1050" timestamp="1584805138344" />
+    <state width="1638" height="354" key="GridCell.Tab.2.left" timestamp="1584805138343">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1638" height="354" key="GridCell.Tab.2.left/0.0.1680.1050@0.0.1680.1050" timestamp="1584723940980" />
-    <state width="1638" height="354" key="GridCell.Tab.2.right" timestamp="1584723940981">
+    <state width="1638" height="354" key="GridCell.Tab.2.left/0.0.1680.1050@0.0.1680.1050" timestamp="1584805138343" />
+    <state width="1638" height="354" key="GridCell.Tab.2.right" timestamp="1584805138344">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1638" height="354" key="GridCell.Tab.2.right/0.0.1680.1050@0.0.1680.1050" timestamp="1584723940981" />
-    <state width="1638" height="354" key="GridCell.Tab.3.bottom" timestamp="1584723940983">
+    <state width="1638" height="354" key="GridCell.Tab.2.right/0.0.1680.1050@0.0.1680.1050" timestamp="1584805138344" />
+    <state width="1638" height="354" key="GridCell.Tab.3.bottom" timestamp="1584805138345">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1638" height="354" key="GridCell.Tab.3.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1584723940983" />
-    <state width="1638" height="354" key="GridCell.Tab.3.center" timestamp="1584723940982">
+    <state width="1638" height="354" key="GridCell.Tab.3.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1584805138345" />
+    <state width="1638" height="354" key="GridCell.Tab.3.center" timestamp="1584805138345">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1638" height="354" key="GridCell.Tab.3.center/0.0.1680.1050@0.0.1680.1050" timestamp="1584723940982" />
-    <state width="1638" height="354" key="GridCell.Tab.3.left" timestamp="1584723940982">
+    <state width="1638" height="354" key="GridCell.Tab.3.center/0.0.1680.1050@0.0.1680.1050" timestamp="1584805138345" />
+    <state width="1638" height="354" key="GridCell.Tab.3.left" timestamp="1584805138345">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1638" height="354" key="GridCell.Tab.3.left/0.0.1680.1050@0.0.1680.1050" timestamp="1584723940982" />
-    <state width="1638" height="354" key="GridCell.Tab.3.right" timestamp="1584723940983">
+    <state width="1638" height="354" key="GridCell.Tab.3.left/0.0.1680.1050@0.0.1680.1050" timestamp="1584805138345" />
+    <state width="1638" height="354" key="GridCell.Tab.3.right" timestamp="1584805138345">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1638" height="354" key="GridCell.Tab.3.right/0.0.1680.1050@0.0.1680.1050" timestamp="1584723940983" />
-    <state width="1638" height="354" key="GridCell.Tab.4.bottom" timestamp="1584723940984">
+    <state width="1638" height="354" key="GridCell.Tab.3.right/0.0.1680.1050@0.0.1680.1050" timestamp="1584805138345" />
+    <state width="1638" height="354" key="GridCell.Tab.4.bottom" timestamp="1584805138346">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1638" height="354" key="GridCell.Tab.4.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1584723940984" />
-    <state width="1638" height="354" key="GridCell.Tab.4.center" timestamp="1584723940984">
+    <state width="1638" height="354" key="GridCell.Tab.4.bottom/0.0.1680.1050@0.0.1680.1050" timestamp="1584805138346" />
+    <state width="1638" height="354" key="GridCell.Tab.4.center" timestamp="1584805138346">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1638" height="354" key="GridCell.Tab.4.center/0.0.1680.1050@0.0.1680.1050" timestamp="1584723940984" />
-    <state width="1638" height="354" key="GridCell.Tab.4.left" timestamp="1584723940984">
+    <state width="1638" height="354" key="GridCell.Tab.4.center/0.0.1680.1050@0.0.1680.1050" timestamp="1584805138346" />
+    <state width="1638" height="354" key="GridCell.Tab.4.left" timestamp="1584805138346">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1638" height="354" key="GridCell.Tab.4.left/0.0.1680.1050@0.0.1680.1050" timestamp="1584723940984" />
-    <state width="1638" height="354" key="GridCell.Tab.4.right" timestamp="1584723940984">
+    <state width="1638" height="354" key="GridCell.Tab.4.left/0.0.1680.1050@0.0.1680.1050" timestamp="1584805138346" />
+    <state width="1638" height="354" key="GridCell.Tab.4.right" timestamp="1584805138346">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state width="1638" height="354" key="GridCell.Tab.4.right/0.0.1680.1050@0.0.1680.1050" timestamp="1584723940984" />
-    <state x="440" y="264" key="Rider.ProjectTemplateDialog.Size" timestamp="1584555638909">
+    <state width="1638" height="354" key="GridCell.Tab.4.right/0.0.1680.1050@0.0.1680.1050" timestamp="1584805138346" />
+    <state x="440" y="264" key="Rider.ProjectTemplateDialog.Size" timestamp="1584806497016">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
-    <state x="440" y="264" key="Rider.ProjectTemplateDialog.Size/0.0.1680.1050@0.0.1680.1050" timestamp="1584555638909" />
+    <state x="440" y="264" key="Rider.ProjectTemplateDialog.Size/0.0.1680.1050@0.0.1680.1050" timestamp="1584806497016" />
     <state x="238" y="233" key="RiderGenerateDialog" timestamp="1584750956103">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
@@ -204,6 +292,10 @@
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
     <state x="349" y="164" key="SettingsEditor/0.0.1680.1050@0.0.1680.1050" timestamp="1584645279274" />
+    <state x="100" y="100" width="640" height="850" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1584803236113">
+      <screen x="0" y="0" width="1680" height="1050" />
+    </state>
+    <state x="100" y="100" width="640" height="850" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1680.1050@0.0.1680.1050" timestamp="1584803236113" />
     <state x="392" y="269" key="com.intellij.xdebugger.impl.breakpoints.ui.BreakpointsDialogFactory$2" timestamp="1584723939510">
       <screen x="0" y="0" width="1680" height="1050" />
     </state>
@@ -1545,6 +1637,10 @@
       <configuration name="RiderUnitTests">
         <watch expression="TOutput" />
         <watch expression="typeof(TOutput)" />
+        <watch expression="Directory.GetDirectories(&quot;GradeBook&quot;)" language="C#" custom="RiderImportsList:" />
+        <watch expression="this." language="C#" custom="RiderImportsList:" />
+        <watch expression="Assembly.GetExecutingAssembly().Location" language="C#" custom="RiderImportsList:" />
+        <watch expression="this.GetType().Assembly" language="C#" custom="RiderImportsList:" />
       </configuration>
     </watches-manager>
   </component>

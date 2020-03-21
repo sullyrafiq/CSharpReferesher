@@ -1,53 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="ef8a7ab9-81af-44db-8f3c-9c9071030d09" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/test/GradeBook.Tests/datastructures/EnumWithGenerics.cs" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.gradebook/.idea/contentModel.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.gradebook/.idea/contentModel.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/.idea.gradebook/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.idea.gradebook/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GradeBook/GradeBook.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/src/GradeBook/GradeBook.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GradeBook/bin/Debug/netcoreapp3.1/EntityFramework.SqlServer.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GradeBook/bin/Debug/netcoreapp3.1/EntityFramework.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GradeBook/bin/Debug/netcoreapp3.1/GradeBook.deps.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GradeBook/bin/Debug/netcoreapp3.1/GradeBook.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GradeBook/bin/Debug/netcoreapp3.1/GradeBook.pdb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GradeBook/bin/Debug/netcoreapp3.1/GradeBook.runtimeconfig.dev.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GradeBook/bin/Debug/netcoreapp3.1/GradeBook.runtimeconfig.json" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GradeBook/bin/Debug/netcoreapp3.1/Microsoft.Win32.SystemEvents.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GradeBook/bin/Debug/netcoreapp3.1/System.CodeDom.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GradeBook/bin/Debug/netcoreapp3.1/System.Configuration.ConfigurationManager.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GradeBook/bin/Debug/netcoreapp3.1/System.Data.SqlClient.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GradeBook/bin/Debug/netcoreapp3.1/System.Drawing.Common.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GradeBook/bin/Debug/netcoreapp3.1/System.Security.Cryptography.ProtectedData.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GradeBook/bin/Debug/netcoreapp3.1/System.Security.Permissions.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GradeBook/bin/Debug/netcoreapp3.1/System.Windows.Extensions.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GradeBook/bin/Debug/netcoreapp3.1/runtimes/unix/lib/netcoreapp2.1/System.Data.SqlClient.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GradeBook/bin/Debug/netcoreapp3.1/runtimes/unix/lib/netcoreapp3.0/System.Drawing.Common.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GradeBook/bin/Debug/netcoreapp3.1/runtimes/win-arm64/native/sni.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GradeBook/bin/Debug/netcoreapp3.1/runtimes/win-x64/native/sni.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GradeBook/bin/Debug/netcoreapp3.1/runtimes/win-x86/native/sni.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GradeBook/bin/Debug/netcoreapp3.1/runtimes/win/lib/netcoreapp2.1/System.Data.SqlClient.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GradeBook/bin/Debug/netcoreapp3.1/runtimes/win/lib/netcoreapp3.0/Microsoft.Win32.SystemEvents.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GradeBook/bin/Debug/netcoreapp3.1/runtimes/win/lib/netcoreapp3.0/System.Drawing.Common.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GradeBook/bin/Debug/netcoreapp3.1/runtimes/win/lib/netcoreapp3.0/System.Windows.Extensions.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GradeBook/bin/Debug/netcoreapp3.1/runtimes/win/lib/netstandard2.0/System.Security.Cryptography.ProtectedData.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GradeBook/obj/Debug/netcoreapp3.1/GradeBook" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GradeBook/obj/Debug/netcoreapp3.1/GradeBook.assets.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GradeBook/obj/Debug/netcoreapp3.1/GradeBook.csproj.CopyComplete" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GradeBook/obj/Debug/netcoreapp3.1/GradeBook.csproj.FileListAbsolute.txt" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GradeBook/obj/Debug/netcoreapp3.1/GradeBook.csprojAssemblyReference.cache" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GradeBook/obj/Debug/netcoreapp3.1/GradeBook.dll" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/GradeBook/obj/Debug/netcoreapp3.1/GradeBook.pdb" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/GradeBook.Tests/GradeBook.Tests.csproj" beforeDir="false" afterPath="$PROJECT_DIR$/test/GradeBook.Tests/GradeBook.Tests.csproj" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/GradeBook.Tests/bin/Debug/netcoreapp3.1/GradeBook.Tests.dll" beforeDir="false" afterPath="$PROJECT_DIR$/test/GradeBook.Tests/bin/Debug/netcoreapp3.1/GradeBook.Tests.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/GradeBook.Tests/bin/Debug/netcoreapp3.1/GradeBook.Tests.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/test/GradeBook.Tests/bin/Debug/netcoreapp3.1/GradeBook.Tests.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/GradeBook.Tests/bin/Debug/netcoreapp3.1/GradeBook.dll" beforeDir="false" afterPath="$PROJECT_DIR$/test/GradeBook.Tests/bin/Debug/netcoreapp3.1/GradeBook.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/GradeBook.Tests/bin/Debug/netcoreapp3.1/GradeBook.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/test/GradeBook.Tests/bin/Debug/netcoreapp3.1/GradeBook.pdb" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/GradeBook.Tests/obj/Debug/netcoreapp3.1/GradeBook.Tests.csproj.FileListAbsolute.txt" beforeDir="false" afterPath="$PROJECT_DIR$/test/GradeBook.Tests/obj/Debug/netcoreapp3.1/GradeBook.Tests.csproj.FileListAbsolute.txt" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/GradeBook.Tests/obj/Debug/netcoreapp3.1/GradeBook.Tests.csprojAssemblyReference.cache" beforeDir="false" afterPath="$PROJECT_DIR$/test/GradeBook.Tests/obj/Debug/netcoreapp3.1/GradeBook.Tests.csprojAssemblyReference.cache" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/GradeBook.Tests/obj/Debug/netcoreapp3.1/GradeBook.Tests.dll" beforeDir="false" afterPath="$PROJECT_DIR$/test/GradeBook.Tests/obj/Debug/netcoreapp3.1/GradeBook.Tests.dll" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/test/GradeBook.Tests/obj/Debug/netcoreapp3.1/GradeBook.Tests.pdb" beforeDir="false" afterPath="$PROJECT_DIR$/test/GradeBook.Tests/obj/Debug/netcoreapp3.1/GradeBook.Tests.pdb" afterDir="false" />
-    </list>
+    <list default="true" id="ef8a7ab9-81af-44db-8f3c-9c9071030d09" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -175,7 +129,7 @@
       <option name="number" value="Default" />
       <option name="presentableId" value="Default" />
       <updated>1584555427689</updated>
-      <workItem from="1584555431605" duration="24701000" />
+      <workItem from="1584555431605" duration="24952000" />
     </task>
     <servers />
   </component>

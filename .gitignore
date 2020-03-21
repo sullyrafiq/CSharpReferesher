@@ -3,3 +3,5 @@ bin
 obj
 .idea
 .vscode
+.idea/
+.DS_Store

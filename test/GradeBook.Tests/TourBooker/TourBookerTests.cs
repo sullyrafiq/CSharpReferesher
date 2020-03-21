@@ -23,7 +23,7 @@ namespace GradeBook.Tests.TourBooker
             // Arrange
             var appData = new AppData();
             appData.Initialise();
-            
+
             // Act
             var allCountries = appData.AllCountries;
 
@@ -43,7 +43,7 @@ namespace GradeBook.Tests.TourBooker
             var appData = new AppData();
             appData.Initialise();
             var allCountries = appData.AllCountries;
-            
+
             // Act
             var sortedCountries = allCountries
                 .OrderBy(x => x.Name)
@@ -52,8 +52,8 @@ namespace GradeBook.Tests.TourBooker
             // Assert
             Assert.Equal(217, sortedCountries.Count());
 
-           Assert.Equal("Afghanistan",sortedCountries[0].Name);
-           Assert.Equal("Zimbabwe",sortedCountries[216].Name);
+            Assert.Equal("Afghanistan", sortedCountries[0].Name);
+            Assert.Equal("Zimbabwe", sortedCountries[216].Name);
         }
 
         [Fact]
@@ -66,6 +66,36 @@ namespace GradeBook.Tests.TourBooker
 
             // Act
             Country country = GetCountryWithCountryCode(allCountries, "CHN");
+
+            // Assert
+            Assert.Equal("China", country.Name);
+        }
+
+        [Fact]
+        public void it_finds_country_by_country_code_but_using_dictionary()
+        {
+            // Arrange
+            var appData = new AppData();
+            appData.Initialise();
+            var allCountriesByKey = appData.AllCountriesByKey;
+
+            // Act
+            allCountriesByKey.TryGetValue("CHN", out Country country);
+
+            // Assert
+            Assert.Equal("China", country.Name);
+        }
+        
+        [Fact]
+        public void it_finds_country_by_country_code_but_using_dictionary_and_with_lowercase_country_code()
+        {
+            // Arrange
+            var appData = new AppData();
+            appData.Initialise();
+            var allCountriesByKey = appData.AllCountriesByKey;
+
+            // Act
+            allCountriesByKey.TryGetValue("chn", out Country country);
 
             // Assert
             Assert.Equal("China", country.Name);

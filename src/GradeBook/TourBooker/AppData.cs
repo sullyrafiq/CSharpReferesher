@@ -13,6 +13,12 @@ namespace GradeBook.TourBooker
         public SortedDictionary<CountryCode, Country> AllCountriesSorted { get; private set; }
         public SortedList<CountryCode, Country> AllCountriesSortedWithList { get; private set; }
 
+        public LinkedList<Country> ItineraryBuilder { get; } = new LinkedList<Country>();
+       
+        public SortedDictionary<string, Tour> AllTours { get; private set; } = new SortedDictionary<string, Tour>();
+      
+        public Stack<ItineraryChange> ChangeLog { get; } = new Stack<ItineraryChange>();
+        
         public void Initialise()
         {
             CsvReader reader = new CsvReader();

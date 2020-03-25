@@ -19,6 +19,8 @@
 
   <ItemGroup>
     <Resource Include="TestAssets\PopByLargest.csv" />
+    <Resource Include="TestAssets\fuel.csv" />
+    <Resource Include="TestAssets\manufacturers.csv" />
   </ItemGroup>
   
   <ItemGroup>

@@ -1,0 +1,57 @@
+{
+  "name": "acceptance-tests",
+  "version": "1.0.0",
+  "description": "Moneysupermarket Motor Insurance Acceptance-tests",
+  "author": "Julius Mbu <julius.mbu@moneysupermarket.com>",
+  "private": true,
+  "scripts": {
+    "postinstall": "selenium-standalone install --drivers.chrome.version=80.0.3987.106",
+    "test": "nightwatch",
+    "test-local": "nightwatch --env headlessChrome",
+    "test-chrome": "nightwatch --env chrome",
+    "test-bstack": "node browserstack",
+    "report": "nightwatch-html-reporter --report-dir reports --relative-screenshots",
+    "lint": "eslint --ext .js src"
+  },
+  "dependencies": {
+    "axe-core": "^2.6.1",
+    "browserstack-local": "^1.4.0",
+    "deep-object-diff": "^1.1.0",
+    "es6-promise": "^4.2.2",
+    "lodash.isequal": "^4.5.0",
+    "lodash.mergewith": "^4.6.1",
+    "lodash.omit": "^4.5.0",
+    "nightwatch": "^1.2.2",
+    "nightwatch-accessibility": "^1.8.0",
+    "nightwatch-html-reporter": "^2.0.6",
+    "node-fetch": "^2.1.2",
+    "phantomjs-prebuilt": "^2.1.16",
+    "selenium-server": "^3.141.59",
+    "selenium-standalone": "^6.17.0",
+    "uuid": "^3.2.1",
+    "winston": "^3.2.1",
+    "yargs": "^11.0.0"
+  },
+  "devDependencies": {
+    "@babel/core": "^7.0.0-rc.1",
+    "@babel/polyfill": "^7.0.0-rc.1",
+    "@babel/preset-env": "^7.0.0-rc.1",
+    "@babel/register": "^7.0.0-rc.1",
+    "allure-commandline": "^2.9.0",
+    "eslint": "^4.15.0",
+    "eslint-friendly-formatter": "^3.0.0",
+    "nightwatch-allure-adapter": "git+https://github.com/juliusMbu/nightwatch-allure-adapter.git"
+  },
+  "resolutions": {
+    "nightwatch-accessibility/axe-core": "^2.6.1"
+  },
+  "engines": {
+    "node": ">= 4.0.0",
+    "npm": ">= 3.0.0"
+  },
+  "browserslist": [
+    "> 1% in GB",
+    "last 2 versions",
+    "not ie <= 10"
+  ]
+}

@@ -1,0 +1,588 @@
+{
+  "src_folders": [
+    "src/tests"
+  ],
+  "output_folder": "./reports/nightwatch",
+  "custom_commands_path": [
+    "./node_modules/nightwatch-accessibility/commands",
+    "./commands"
+  ],
+  "custom_assertions_path": ["./node_modules/nightwatch-accessibility/assertions"],
+  "page_objects_path": "src/pages",
+  "globals_path": "./globals.js",
+  "selenium": {
+    "start_process": true,
+    "server_path": "./node_modules/selenium-standalone/.selenium/selenium-server/3.141.5-server.jar",
+    "log_path": "./logs",
+    "cli_args": {
+      "webdriver.chrome.driver": "./node_modules/selenium-standalone/.selenium/chromedriver/80.0.3987.106-x64-chromedriver",
+      "webdriver.gecko.driver": "./node_modules/selenium-standalone/.selenium/geckodriver/0.23.0-x64-geckodriver"
+    }
+  },
+  "test_settings": {
+    "default": {
+      "launch_url": "https://local.mcloud.moneysupermarket.com:8443",
+      "selenium_port": 4444,
+      "selenium_host": "localhost",
+      "test_workers": {
+        "enabled": true,
+        "workers": 4
+      },
+      "silent": true,
+      "detailed_output": true,
+      "live_output": true,
+      "end_session_on_fail": true,
+      "skip_testcases_on_fail": true,
+      "screenshots": {
+        "enabled": true,
+        "on_failure": true,
+        "path": "./reports/nightwatch/screenshots"
+      },
+      "desiredCapabilities": {
+        "browserName" : "firefox",
+        "javascriptEnabled" : true,
+        "acceptSslCerts" : true,
+        "acceptInsecureCerts": true,
+        "marionette": true,
+        "browserstack.timezone": "Europe/London"
+      },
+      "globals" : {
+        "services_url" : "https://internal-gateway1-ssl.services.sit1.gb.msm.internal",
+        "context_path": "/shop/car-insurance",
+        "env" : "local",
+        "enquiry_check_enabled": true,
+        "existingAccountCredentials": {
+          "email": "expiredjourney@msm.com",
+          "password": "expired1234"
+        },
+        "expiredEnquiryId": "d269cd9d-38dd-4eca-bf5a-d29ea874f795"
+      }
+    },
+    "headlessChrome": {
+      "desiredCapabilities": {
+        "test_workers": false,
+        "browserName": "chrome",
+        "javascriptEnabled": true,
+        "acceptSslCerts": true,
+        "acceptInsecureCerts": true,
+        "goog:chromeOptions": {
+          "w3c": false,
+          "args": [
+            "--headless",
+            "--start-fullscreen",
+            "--ignore-certificate-errors",
+            "--disable-web-security",
+            "--disable-background-timer-throttling",
+            "--disable-backgrounding-occluded-windows",
+            "--disable-breakpad",
+            "--disable-component-extensions-with-background-pages",
+            "--disable-dev-shm-usage",
+            "--disable-extensions",
+            "--disable-features=TranslateUI,BlinkGenPropertyTrees",
+            "--disable-ipc-flooding-protection",
+            "--disable-renderer-backgrounding",
+            "--enable-features=NetworkService,NetworkServiceInProcess",
+            "--force-color-profile=srgb",
+            "--hide-scrollbars",
+            "--metrics-recording-only",
+            "--mute-audio",
+            "--no-sandbox"
+          ]
+        }
+      }
+    },
+    "pr-builder": {
+      "selenium": {
+        "start_process": false
+      },
+      "launch_url": "${LAUNCH_URL}",
+      "selenium_host": "${SELENIUM_HOST}",
+      "selenium_port": 4444,
+      "silent": true,
+      "detailed_output": true,
+      "live_output": true,
+      "desiredCapabilities": {
+        "browserName": "chrome",
+        "javascriptEnabled": true,
+        "acceptSslCerts": true,
+        "acceptInsecureCerts": true,
+        "goog:chromeOptions": {
+          "w3c": false,
+          "args": [
+            "--start-fullscreen",
+            "--ignore-certificate-errors",
+            "--disable-web-security",
+            "--disable-background-timer-throttling",
+            "--disable-backgrounding-occluded-windows",
+            "--disable-breakpad",
+            "--disable-component-extensions-with-background-pages",
+            "--disable-dev-shm-usage",
+            "--disable-extensions",
+            "--disable-features=TranslateUI,BlinkGenPropertyTrees",
+            "--disable-ipc-flooding-protection",
+            "--disable-renderer-backgrounding",
+            "--enable-features=NetworkService,NetworkServiceInProcess",
+            "--force-color-profile=srgb",
+            "--hide-scrollbars",
+            "--metrics-recording-only",
+            "--mute-audio",
+            "--no-sandbox"
+          ]
+        }
+      },
+      "globals": {
+        "env": "pr-builder",
+        "services_url": "${SERVICE_CLIENT_URL}"
+      }
+    },
+    "chrome": {
+      "desiredCapabilities" : {
+        "test_workers": false,
+        "browserName" : "chrome",
+        "javascriptEnabled" : true,
+        "acceptSslCerts" : true,
+        "acceptInsecureCerts": true,
+        "goog:chromeOptions": {
+          "w3c": false,
+          "args": [
+            "--start-fullscreen",
+            "--ignore-certificate-errors",
+            "--disable-web-security",
+            "--disable-background-timer-throttling",
+            "--disable-backgrounding-occluded-windows",
+            "--disable-breakpad",
+            "--disable-component-extensions-with-background-pages",
+            "--disable-dev-shm-usage",
+            "--disable-extensions",
+            "--disable-features=TranslateUI,BlinkGenPropertyTrees",
+            "--disable-ipc-flooding-protection",
+            "--disable-renderer-backgrounding",
+            "--enable-features=NetworkService,NetworkServiceInProcess",
+            "--force-color-profile=srgb",
+            "--hide-scrollbars",
+            "--metrics-recording-only",
+            "--mute-audio",
+            "--no-sandbox"
+          ]
+        }
+      }
+    },
+    "safari": {
+      "desiredCapabilities" : {
+        "test_workers": false,
+        "browserName" : "safari",
+        "javascriptEnabled" : true,
+        "acceptSslCerts" : true,
+        "acceptInsecureCerts": true
+      }
+    },
+    "sit1": {
+      "selenium": {
+        "start_process": false
+      },
+      "launch_url": "https://sit1.mcloud.moneysupermarket.com",
+      "selenium_host": "${SELENIUM_HOST}",
+      "selenium_port": 4444,
+      "silent": true,
+      "detailed_output": true,
+      "live_output": true,
+      "desiredCapabilities": {
+        "browserName": "chrome",
+        "javascriptEnabled": true,
+        "goog:chromeOptions": {
+          "w3c": false,
+          "args": [
+            "--start-fullscreen",
+            "--disable-background-timer-throttling",
+            "--disable-backgrounding-occluded-windows",
+            "--disable-breakpad",
+            "--disable-component-extensions-with-background-pages",
+            "--disable-dev-shm-usage",
+            "--disable-extensions",
+            "--disable-features=TranslateUI,BlinkGenPropertyTrees",
+            "--disable-ipc-flooding-protection",
+            "--disable-renderer-backgrounding",
+            "--enable-features=NetworkService,NetworkServiceInProcess",
+            "--force-color-profile=srgb",
+            "--hide-scrollbars",
+            "--metrics-recording-only",
+            "--mute-audio",
+            "--no-sandbox"
+          ]
+        }
+      },
+      "globals" : {
+        "services_url" : "https://internal-gateway1-ssl.services.sit1.gb.msm.internal",
+        "env" : "sit1"
+      }
+    },
+    "sit1-ios": {
+      "selenium": {
+        "start_process": false
+      },
+      "launch_url": "https://sit1.mcloud.moneysupermarket.com",
+      "test_workers": false,
+      "silent": false,
+      "output": true,
+      "desiredCapabilities": {
+        "project": "McQueen",
+        "build": "${BUILD_KEY}",
+        "device": "iPhone 8",
+        "realMobile": "true",
+        "os_version": "12.2",
+        "browser": "safari"
+      },
+      "globals": {
+        "env": "sit1-ios",
+        "services_url" : "https://internal-gateway1-ssl.services.sit1.gb.msm.internal"
+      }
+    },
+    "local-ios": {
+      "selenium": {
+        "start_process": false
+      },
+      "launch_url": "${LAUNCH_URL}",
+      "test_workers": false,
+      "silent": false,
+      "output": true,
+      "desiredCapabilities": {
+        "device": "iPhone 7",
+        "realMobile": "true",
+        "os_version": "10.3"
+      },
+      "globals": {
+        "env": "local-ios"
+      }
+    },
+    "local-ios-xcode" : {
+      "selenium": {
+        "start_process": false
+      },
+      "selenium_port" : 4723,
+      "selenium_host" : "127.0.0.1",
+      "launch_url": "https://localhost:8443",
+      "test_workers": false,
+      "silent": false,
+      "output": true,
+      "automationName": "XCUITest",
+      "desiredCapabilities" : {
+        "browserName" : "Safari",
+        "platformName" : "iOS",
+        "platformVersion" : "12.1",
+        "deviceName" : "iPhone X"
+      },
+      "globals": {
+        "env": "local-ios-xcode"
+      }
+    },
+    "sit1-android": {
+      "selenium": {
+        "start_process": false
+      },
+      "launch_url": "https://sit1.mcloud.moneysupermarket.com",
+      "test_workers": false,
+      "silent": false,
+      "output": true,
+      "desiredCapabilities": {
+        "project": "McQueen",
+        "build": "${BUILD_KEY}",
+        "device": "Samsung Galaxy S9",
+        "realMobile": "true",
+        "os_version": "8.0",
+        "browser": "chrome"
+      },
+      "globals": {
+        "env": "sit1-android",
+        "services_url" : "https://internal-gateway1-ssl.services.sit1.gb.msm.internal"
+      }
+    },
+    "perf5-pending": {
+      "selenium": {
+        "start_process": false
+      },
+      "launch_url": "https://perf5-pending.mcloud.moneysupermarket.com",
+      "selenium_host": "${SELENIUM_HOST}",
+      "selenium_port": 4444,
+      "silent": false,
+      "output": true,
+      "desiredCapabilities": {
+        "browserName": "chrome",
+        "javascriptEnabled": true,
+        "acceptSslCerts": true,
+        "acceptInsecureCerts": true,
+        "goog:chromeOptions": {
+          "w3c": false,
+          "args": [
+            "--start-fullscreen",
+            "--ignore-certificate-errors",
+            "--disable-web-security",
+            "--disable-background-timer-throttling",
+            "--disable-backgrounding-occluded-windows",
+            "--disable-breakpad",
+            "--disable-component-extensions-with-background-pages",
+            "--disable-dev-shm-usage",
+            "--disable-extensions",
+            "--disable-features=TranslateUI,BlinkGenPropertyTrees",
+            "--disable-ipc-flooding-protection",
+            "--disable-renderer-backgrounding",
+            "--enable-features=NetworkService,NetworkServiceInProcess",
+            "--force-color-profile=srgb",
+            "--hide-scrollbars",
+            "--metrics-recording-only",
+            "--mute-audio",
+            "--no-sandbox"
+          ]
+        }
+      },
+      "globals": {
+        "env": "perf5-pending",
+        "services_url" : "https://internal-gateway1-ssl.services.perf5.gb.msm.internal",
+        "accountId": "d9a01c0c-babb-4db6-a16c-7d4403e51932"
+      }
+    },
+    "pre1-pending": {
+      "selenium": {
+        "start_process": false
+      },
+      "launch_url": "https://pre1-pending.mcloud.moneysupermarket.com",
+      "selenium_host": "${SELENIUM_HOST}",
+      "selenium_port": 4444,
+      "silent": false,
+      "output": true,
+      "desiredCapabilities": {
+        "browserName": "chrome",
+        "javascriptEnabled": true,
+        "acceptSslCerts": true,
+        "acceptInsecureCerts": true,
+        "goog:chromeOptions": {
+          "w3c": false,
+          "args": [
+            "--start-fullscreen",
+            "--ignore-certificate-errors",
+            "--disable-web-security",
+            "--disable-background-timer-throttling",
+            "--disable-backgrounding-occluded-windows",
+            "--disable-breakpad",
+            "--disable-component-extensions-with-background-pages",
+            "--disable-dev-shm-usage",
+            "--disable-extensions",
+            "--disable-features=TranslateUI,BlinkGenPropertyTrees",
+            "--disable-ipc-flooding-protection",
+            "--disable-renderer-backgrounding",
+            "--enable-features=NetworkService,NetworkServiceInProcess",
+            "--force-color-profile=srgb",
+            "--hide-scrollbars",
+            "--metrics-recording-only",
+            "--mute-audio",
+            "--no-sandbox"
+          ]
+        }
+      },
+      "globals" : {
+        "services_url": "https://internal-gateway1-ssl.services.pre1.gb.msm.internal",
+        "env": "pre1-pending"
+      }
+    },
+    "prod1-pending": {
+      "selenium": {
+        "start_process": false
+      },
+      "launch_url": "https://pending.moneysupermarket.com",
+      "selenium_host": "${SELENIUM_HOST}",
+      "selenium_port": 4444,
+      "silent": false,
+      "output": true,
+      "desiredCapabilities": {
+        "browserName": "chrome",
+        "javascriptEnabled": true,
+        "acceptSslCerts": true,
+        "acceptInsecureCerts": true,
+        "goog:chromeOptions": {
+          "w3c": false,
+          "args": [
+            "--start-fullscreen",
+            "--ignore-certificate-errors",
+            "--disable-web-security",
+            "--disable-background-timer-throttling",
+            "--disable-backgrounding-occluded-windows",
+            "--disable-breakpad",
+            "--disable-component-extensions-with-background-pages",
+            "--disable-dev-shm-usage",
+            "--disable-extensions",
+            "--disable-features=TranslateUI,BlinkGenPropertyTrees",
+            "--disable-ipc-flooding-protection",
+            "--disable-renderer-backgrounding",
+            "--enable-features=NetworkService,NetworkServiceInProcess",
+            "--force-color-profile=srgb",
+            "--hide-scrollbars",
+            "--metrics-recording-only",
+            "--mute-audio",
+            "--no-sandbox"
+          ]
+        }
+      },
+      "globals": {
+        "env": "prod1-pending"
+      }
+    },
+    "perf5": {
+      "selenium": {
+        "start_process": false
+      },
+      "launch_url": "https://perf5.mcloud.moneysupermarket.com",
+      "selenium_host": "selenium_hub_mcqueen.inf1.gb.msm.msmcloud.net",
+      "selenium_port": 4444,
+      "silent": false,
+      "output": true,
+      "desiredCapabilities": {
+        "browserName": "chrome",
+        "javascriptEnabled": true,
+        "goog:chromeOptions": {
+          "w3c": false,
+          "args": [
+            "--start-fullscreen",
+            "--disable-background-timer-throttling",
+            "--disable-backgrounding-occluded-windows",
+            "--disable-breakpad",
+            "--disable-component-extensions-with-background-pages",
+            "--disable-dev-shm-usage",
+            "--disable-extensions",
+            "--disable-features=TranslateUI,BlinkGenPropertyTrees",
+            "--disable-ipc-flooding-protection",
+            "--disable-renderer-backgrounding",
+            "--enable-features=NetworkService,NetworkServiceInProcess",
+            "--force-color-profile=srgb",
+            "--hide-scrollbars",
+            "--metrics-recording-only",
+            "--mute-audio",
+            "--no-sandbox"
+          ]
+        }
+      },
+      "globals": {
+        "env": "perf5",
+        "services_url" : "https://internal-gateway1-ssl.services.perf5.gb.msm.internal"
+      }
+    },
+    "pre1": {
+      "selenium": {
+        "start_process": false
+      },
+      "launch_url": "https://pre1.mcloud.moneysupermarket.com",
+      "selenium_host": "selenium_hub_mcqueen.inf1.gb.msm.msmcloud.net",
+      "selenium_port": 4444,
+      "silent": false,
+      "output": true,
+      "desiredCapabilities": {
+        "browserName": "chrome",
+        "javascriptEnabled": true,
+        "goog:chromeOptions": {
+          "w3c": false,
+          "args": [
+            "--start-fullscreen",
+            "--disable-background-timer-throttling",
+            "--disable-backgrounding-occluded-windows",
+            "--disable-breakpad",
+            "--disable-component-extensions-with-background-pages",
+            "--disable-dev-shm-usage",
+            "--disable-extensions",
+            "--disable-features=TranslateUI,BlinkGenPropertyTrees",
+            "--disable-ipc-flooding-protection",
+            "--disable-renderer-backgrounding",
+            "--enable-features=NetworkService,NetworkServiceInProcess",
+            "--force-color-profile=srgb",
+            "--hide-scrollbars",
+            "--metrics-recording-only",
+            "--mute-audio",
+            "--no-sandbox"
+          ]
+        }
+      },
+      "globals" : {
+        "services_url": "https://internal-gateway1-ssl.services.pre1.gb.msm.internal",
+        "env": "pre1"
+      }
+    },
+    "prod1": {
+      "selenium": {
+        "start_process": false
+      },
+      "launch_url": "https://www.moneysupermarket.com",
+      "selenium_host": "selenium_hub_mcqueen.inf1.gb.msm.msmcloud.net",
+      "selenium_port": 4444,
+      "silent": false,
+      "output": true,
+      "desiredCapabilities": {
+        "browserName": "chrome",
+        "javascriptEnabled": true,
+        "goog:chromeOptions": {
+          "w3c": false,
+          "args": [
+            "--start-fullscreen",
+            "--disable-background-timer-throttling",
+            "--disable-backgrounding-occluded-windows",
+            "--disable-breakpad",
+            "--disable-component-extensions-with-background-pages",
+            "--disable-dev-shm-usage",
+            "--disable-extensions",
+            "--disable-features=TranslateUI,BlinkGenPropertyTrees",
+            "--disable-ipc-flooding-protection",
+            "--disable-renderer-backgrounding",
+            "--enable-features=NetworkService,NetworkServiceInProcess",
+            "--force-color-profile=srgb",
+            "--hide-scrollbars",
+            "--metrics-recording-only",
+            "--mute-audio",
+            "--no-sandbox"
+          ]
+        }
+      },
+      "globals": {
+        "env": "prod1"
+      }
+    },
+    "local-grid": {
+      "selenium": {
+        "start_process": false
+      },
+      "launch_url": "${LAUNCH_URL}",
+      "selenium_host": "selenium-hub",
+      "selenium_port": 4444,
+      "silent": true,
+      "detailed_output": true,
+      "live_output": true,
+      "desiredCapabilities": {
+        "browserName": "chrome",
+        "javascriptEnabled": true,
+        "acceptSslCerts": true,
+        "acceptInsecureCerts": true,
+        "goog:chromeOptions": {
+          "w3c": false,
+          "args": [
+            "--start-fullscreen",
+            "--ignore-certificate-errors",
+            "--disable-web-security",
+            "--disable-background-timer-throttling",
+            "--disable-backgrounding-occluded-windows",
+            "--disable-breakpad",
+            "--disable-component-extensions-with-background-pages",
+            "--disable-dev-shm-usage",
+            "--disable-extensions",
+            "--disable-features=TranslateUI,BlinkGenPropertyTrees",
+            "--disable-ipc-flooding-protection",
+            "--disable-renderer-backgrounding",
+            "--enable-features=NetworkService,NetworkServiceInProcess",
+            "--force-color-profile=srgb",
+            "--hide-scrollbars",
+            "--metrics-recording-only",
+            "--mute-audio",
+            "--no-sandbox"
+          ]
+        }
+      },
+      "globals" : {
+        "env": "local-grid"
+      }
+    }
+  }
+}

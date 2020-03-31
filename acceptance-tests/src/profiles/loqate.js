@@ -1,0 +1,195 @@
+const tomorrow = new Date();
+tomorrow.setDate(tomorrow.getDate() + 1);
+const policyStartDate = tomorrow.toISOString().slice(0, 10);
+import dynamicAnswers from '../profiles/dynamicAnswers';
+
+module.exports = {
+  yourCar: {
+    registrationNumber: 'A2',
+    selectedVehicle: 'BENTLEY MULSANNE (A2)',
+    vehicle: 'BENTLEY MULSANNE (A2)',
+    numberOfSeats: '9',
+    detailsAssumption: true,
+    isVehicleModified: false,
+    vehicleValue: 15000,
+    carBought: true,
+    monthCarBought: '10',
+    yearCarBought: '2017',
+    registeredOwnerAndKeeper: true,
+    usageType: '1', // Social only (SD&P)
+    personalMilesPerYearEstimated: true,
+    daytimeStorageLocation: '8', // Drive
+    overnightStorageLocation: '2', // Garage
+    anyOtherCars: false
+  },
+  yourDetails: {
+    firstName: 'Peter',
+    lastName: 'Jones',
+    dateOfBirth: { day: '12', month: '12', year: '1999' },
+    gender: 1, // Male
+    loqateField: 'Manchester',
+    address: 'M C R, Unit 17A, Wheatland Business Park, Wallasey, CH44 7ER',
+    isHomeOwner: false,
+    isUkResidentFromBirth: true,
+    maritalStatusId: 2, // Married
+    numberOfChildrenUnder16: 4, // Other
+    numberOfChildrenUnder16Other: 8,
+    employmentStatus: 3, // Employed
+    occupation: 'Teacher',
+    businessSector: 'Education',
+    hasAdditionalOccupation: false,
+    numberOfCarsInHousehold: 1,
+    licenceType: 'Full',
+    licenceIssueCountry: 'UK',
+    licenceCover: 'Manual and automatic',
+    licenceWithAdditionalQualification: false,
+    hasMedicalCondition: false,
+    hasLicenceNumber: false,
+    numberOfYearsLicenceHeld: '2',
+    numberOfMonthsLicenceHeld: '2',
+    hasClaims: false,
+    hasDrivingOffences: false,
+    hasNonMotoringConvictions: true
+  },
+  yourPolicy: {
+    hasAdditionalDriver: false,
+    policyTypeId: 1,
+    legalCover: false,
+    personalInjury: false,
+    breakdownCover: false,
+    courtesyCar: false,
+    voluntaryExcess: 250,
+    insuranceDeclined: false,
+    numberOfYearsNoClaims: '2',
+    paymentPreference: 1, // Annually
+    policyStartDate
+  },
+  aggResponse: {
+    activityTypeId: 1,
+    channelId: null,
+    organisationId: null,
+    clientId: 22,
+    accountId: 'de0a2783-aca0-4a7f-bde4-8a4b310fed41',
+    visitorId: 'wxqQhTv4UxokBV1c3dwY',
+    sourceCode: 'TIV',
+    visitorIPAddress: '127.0.0.1',
+    sessionId: 'f8ee713e-86eb-4aef-98cb-86db8401e672',
+    brandFilter: null,
+    payload: {
+      policy: {
+        policyStartDate,
+        policyTypeId: 1,
+        paymentTypeId: 1,
+        paymentTypeIdForPrices: 1,
+        protectedNoClaims: false,
+        voluntaryExcess: 250,
+        legalCover: false,
+        personalInjury: false,
+        breakdownCover: false,
+        courtesyCar: false
+      },
+      receiptId: null,
+      policyHolder: {
+        name: 'Peter',
+        anyOtherCarsId: 1,
+        surname: 'Jones',
+        ukResidencyStartMonth: null,
+        ukResidencyStartYear: null,
+        licenceTypeId: 4,
+        licenceNumber: null,
+        maritalStatusId: 2,
+        relationshipId: null,
+        hasNonMotoringConvictions: true,
+        genderId: 1,
+        medicalConditionId: 1,
+        numberOfMonthsLicenceHeld: 2,
+        numberOfYearsLicenceHeld: 2,
+        dateOfBirth: '1999-12-12',
+        drivingOffences: [],
+        claims: [],
+        mainOccupation: {
+          businessSectorId: 229,
+          occupationId: 1731,
+          employmentStatusId: 3
+        },
+        additionalOccupation: null,
+        telephone: '01000000000',
+        contactByEmail: false,
+        contactByTel: false,
+        contactByText: false,
+        numberOfYearsNoClaims: 2,
+        hasInsuranceEverBeenDeclined: false,
+        numberOfChildrenUnder16: 8,
+        address: {
+          buildingName: '',
+          county: 'Greater Manchester',
+          department: '',
+          dependantLocality: null,
+          dependantThoroughfare: null,
+          doubleDependantLocality: null,
+          organisation: '',
+          poBox: '',
+          subBuildingName: '',
+          thoroughfare: 'Barton Lane',
+          postTown: null,
+          additionalBuildingNumber: null,
+          additionalSubBuildingNumber: null,
+          country: null,
+          postcode: 'M300FG',
+          primaryBuildingNumber: null,
+          primarySubBuildingNumber: null
+        },
+        tescoClubcardNumber: null,
+        eligibleForIncentive: null,
+        isUkResidentFromBirth: true,
+        isMainDriver: true,
+        isHomeOwner: false
+      },
+      additionalDrivers: [],
+      vehicle: {
+        businessMilesPerYear: 0,
+        monthCarBought: 10,
+        yearCarBought: 2017,
+        daytimeStorageLocationId: 8,
+        numberOfCarsInHousehold: 1,
+        overnightStorageLocationId: 2,
+        ownerId: 10,
+        personalMilesPerYear: dynamicAnswers.personalMilesPerYearA2,
+        registeredKeeperId: 10,
+        registration: 'A2',
+        usageTypeId: 1,
+        vehicleType: {
+          bodyTypeId: 1,
+          engineTypeId: 1,
+          description: 'BENTLEY MULSANNE',
+          importTypeId: 1,
+          makeDescription: 'Bentley',
+          variantCode: '01',
+          variantDescription: 'S',
+          makeCode: '060',
+          modelCode: '058',
+          modelDescription: 'Mulsanne',
+          securityDeviceId: 1,
+          doors: 4,
+          manufacturedFrom: 1987,
+          manufacturedTo: 1992,
+          manufacturedYear: 1990,
+          engineCc: 6750,
+          numberOfSeats: 9,
+          engineLitres: 6.8,
+          rightHandDrive: true,
+          trackerFitted: false,
+          transmissionTypeId: 2,
+          vehicleTypeId: '06005801',
+          vehicleValue: 15000
+        },
+        modifications: [],
+        insuranceGroup50: null,
+        isCarPurchased: true,
+        isVehicleModified: false
+      },
+      quickEstimate: null
+    },
+    isAuthenticated: true
+  }
+};
